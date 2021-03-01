@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   display: flex;
-  height: 100vh;
+  height: 82vh;
 `;
 
 export const BigTitle = styled.h2`
@@ -32,15 +32,24 @@ export const LeftCol = styled.div`
   div {
     height: 100%;
     width: 100%;
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
   }
 `
-
 
 export const RightCol = styled.div`
   display: flex;
   flex-direction: column;
   padding-left: 40px;
   padding-top: 20px;
+  min-width: 45vw;
+
+  display: flex;
+  justify-content: center;
 `
 
 export const SubscribeLink = styled.button`
