@@ -3,6 +3,12 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   display: flex;
   height: 82vh;
+
+  @media all and (max-width: 991px){
+    flex-direction: column-reverse;
+    height: 100%;
+    gap: 50px;
+  }
 `;
 
 export const BigTitle = styled.h2`
@@ -38,6 +44,10 @@ export const LeftCol = styled.div`
   img {
     width: 100%;
     height: 100%;
+
+    @media all and (max-width: 991px){
+      height: fit-content;
+    }
   }
 `
 
